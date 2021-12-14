@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Signup Form</title>
+	<style type="text/css">
+		table{
+			border: 1px solid white;
+		}
+		div{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<form name="myForm" onsubmit="return validate()" method="post" action="msg.html">
+		
+		<table cellspacing="1" cellpadding="2">
+			<tr>
+				<td><div id ="msg"></div></td>
+			</tr>
+			<tr>	
+				<td align="left">Name</td>
+				<td><input type="text" name="name"></td>
+				<td><div id ="error1"></div></td>
+			</tr>
+			<tr>
+				<td align="left">Email</td>
+				<td><input type="text" name="email"></td>
+				<td><div id ="error2"></div></td>
+			</tr>
+			<tr>
+				<td align="left">Password</td>
+				<td><input type="password" name="password"></td>
+				<td><div id="error3"></div></td>
+			</tr>
+			<tr>
+				<td align="left">Phone no</td>
+				<td><input type="text" name="phno"></td>
+				<td><div id="error4"></div></td>
+			</tr>
+			
+			<tr>
+				<td align="right"></td>
+				<td><button>Submit</button> </td>
+			</tr>
+		</table>
+			
+	</form>
+	
+	<script type="text/javascript" src="q2.js"></script>
+</body>
+</html>
